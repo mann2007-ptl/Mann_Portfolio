@@ -1,0 +1,150 @@
+.skills-section {
+    position: relative;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-category-card {
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.category-header {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-secondary);
+    transform: translateY(-2px);
+}
+
+.skill-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.skill-icon {
+    font-size: 1.2rem;
+}
+
+/* Icon Colors */
+.html {
+    color: #E34F26;
+}
+
+.css {
+    color: #1572B6;
+}
+
+.js {
+    color: #F7DF1E;
+}
+
+.react {
+    color: #61DAFB;
+}
+
+.tailwind {
+    color: #06B6D4;
+}
+
+.node {
+    color: #339933;
+}
+
+.mongo {
+    color: #47A248;
+}
+
+.firebase {
+    color: #FFCA28;
+}
+
+.c {
+    color: #A8B9CC;
+}
+
+.cpp {
+    color: #00599C;
+}
+
+.ts {
+    color: #3178C6;
+}
+
+.git {
+    color: #F05032;
+}
+
+.github {
+    color: #ffffff;
+}
+
+.vscode {
+    color: #007ACC;
+}
+
+.postman {
+    color: #FF6C37;
+}
+
+.netlify {
+    color: #00C7B7;
+}
+
+.figma {
+    color: #F24E1E;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-category-card {
+        padding: 1.5rem;
+    }
+}
